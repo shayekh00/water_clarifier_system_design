@@ -7,9 +7,13 @@ This full-stack app detects circular clarifiers in satellite images of water tre
 ## 🧩 Project Structure
 
 project-root/
+
 ├── clarifier-ui/ # React frontend
+
 ├── facility_images_azure/ # Satellite images (PNG/JPG)
+
 ├── clarifiers.db # SQLite database with detection results
+
 ├── main.py # FastAPI backend
 
 
@@ -41,9 +45,10 @@ Make sure:
 OPENAI_API_KEY is set in your .env file
 
 facility_images_azure/ contains your image files
+```
 
-
-🧠 Step 2: Run the FastAPI Backend
+## 🧠  Step 2: Run the FastAPI Backend
+```bash
 Install dependencies:
 
 pip install fastapi uvicorn python-dotenv
@@ -57,9 +62,10 @@ http://localhost:8000/clarifiers?min=0&max=10
 http://localhost:8000/images/<filename>
 
 The server reads from clarifiers.db and serves image files.
+```
 
-
-🖼️ Step 3: Set Up the React Frontend
+## 🖼️ Step 3: Set Up the React Frontend
+```bash
 cd clarifier-ui
 npm install
 
@@ -67,7 +73,9 @@ npm run dev
 
 Visit: http://localhost:5173
 
-🔍 App Features
+```
+
+##  App Features
 🔢 Filter by number of clarifiers using min/max inputs
 
 📷 Display facility images with overlay count
