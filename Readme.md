@@ -18,6 +18,8 @@ project-root/
 
 
 ---
+## 🧩 Working UI Design
+![alt text](image.png)
 
 ## ⚙️ Prerequisites
 
